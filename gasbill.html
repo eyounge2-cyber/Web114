@@ -1,0 +1,50 @@
+<!-- Emily Younger 11/20/2025 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate someone's average weekly grocery bill</title>
+  </head>
+  <body>
+    <h1> What is the purpose of a function?  </h1>
+    <h2>fundamental building blocks of code, allow blocks of code to be repeated so you don't have to type everything out.</h2>
+    <h2>Hit F12 to see the console log.</h2>
+
+    <script>
+      let entryCount = 0;
+      let username = prompt("Enter your name");
+      let gasAvg = calcAvgGas();
+
+      gasAvg = parseFloat(prompt("Enter your weeks gas bill. Enter -1 when you are done."));
+
+       if (entryCount === 0) {
+        confirm("No gas totals were entered.");
+      } else if (entryCount === 1) {
+        confirm(`You entered ${entryCount} gas total.`);
+      } else {
+        confirm(`You entered ${entryCount} gas totals.`);
+      }
+      function calcAvgGas() {
+        let count = 0;
+        let total = 0;
+        let gasAvg = 0;
+
+        gasAvg = parseFloat(
+          prompt("Enter your week's gas bill. Enter -1 when you are done."));
+        }
+        while (gasAvg !== -1) {
+          total = total + gasAvg; 
+          count++;
+          groceryBill = parseFloat(prompt("Enter your week's gas bill. Enter -1 when you are done."));
+        }
+        let weeklyAvg;
+          if (count > 0) {
+            weeklyAvg = total / count;
+          } else {
+            weeklyAvg = 0;
+      }
+      entryCount = count;
+      </script>
+  </body>
+</html>
